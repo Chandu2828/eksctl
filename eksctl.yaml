@@ -1,4 +1,4 @@
-# eksctl create clutser --config-file=eksctl.yaml
+# eksctl create cluster --config-file=eksctl.yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig 
 
@@ -7,7 +7,7 @@ metadata:
   region: us-east-1
 
 managedNodeGroups:
-- name: managed 
-  instanceTypes: ["c3.large","c4.large","c5.large","c5d.large","c5n.large","c5a.large"]
+- name: managed-v2
+  instanceTypes: ["c4.large","c5.large","c5d.large","c5n.large","c5a.large"]
   desiredCapacity: 2
   spot: true 
