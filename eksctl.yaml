@@ -8,6 +8,6 @@ metadata:
 
 managedNodeGroups:
 - name: managed-v2
-  instanceTypes: ["t3.small","t3.micro"]  
+  instanceTypes: ["t3.small"]  
   desiredCapacity: 2
   spot: true 
